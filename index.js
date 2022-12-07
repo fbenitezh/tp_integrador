@@ -2,8 +2,9 @@ const prd = new Producto(1, "lapiz", 'asd', 123, 2);
 const stock_gl_class = new Stock([
     prd
 ]);
-let flag_edit = 0;
+let flag_edit = 0; // variable q indica si tenemos q editar o agregar un producto
 
+// funcion que se ejecuta cuando cargo la pagina
 window.onload = ()=>{
     handleEvents();
     renderTable();
